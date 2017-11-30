@@ -1,7 +1,7 @@
 {% set name = "pyOpenSSL" %}
-{% set version = "17.2.0" %}
+{% set version = "17.4.0" %}
 {% set hash_type = "sha256" %}
-{% set hash = "5d617ce36b07c51f330aa63b83bf7f25c40a0e95958876d54d1982f8c91b4834" %}
+{% set hash = "2d96b6a3d768bf466c56240d6dd6f035cc8e9c356d20da0583886e77ce9cf6ab" %}
 
 package:
   name: {{ name|lower }}
