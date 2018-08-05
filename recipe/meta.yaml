@@ -1,22 +1,19 @@
-{% set name = "pyOpenSSL" %}
 {% set version = "18.0.0" %}
-{% set hash_type = "sha256" %}
-{% set hash = "6488f1423b00f73b7ad5167885312bb0ce410d3312eb212393795b53c8caa580" %}
 
 package:
-  name: {{ name|lower }}
+  name: pyopenssl
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash }}
+  url: https://pypi.io/packages/source/p/pyOpenSSL/pyOpenSSL-{{ version }}.tar.gz
+  sha256: 6488f1423b00f73b7ad5167885312bb0ce410d3312eb212393795b53c8caa580
 
 build:
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-  build:
+  host:
     - python
     - pip
   run:
