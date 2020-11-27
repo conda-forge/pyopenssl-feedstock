@@ -5,9 +5,13 @@ Home: https://github.com/pyca/pyopenssl
 
 Package license: Apache 2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyopenssl-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python wrapper module around the OpenSSL library
+
+Development: https://github.com/pyca/pyopenssl
+
+Documentation: https://pyopenssl.readthedocs.org/en/stable/
 
 pyOpenSSL is a high-level wrapper around a subset of the OpenSSL library.
 It includes:
