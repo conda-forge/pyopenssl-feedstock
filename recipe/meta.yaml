@@ -19,7 +19,7 @@ requirements:
     - pip
   run:
     - python >=2.7
-    - cryptography >=2.8
+    - cryptography >=3.2
     - six >=1.5.2
 
 test:
