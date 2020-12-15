@@ -1,4 +1,4 @@
-{% set version = "20.0.0" %}
+{% set version = "20.0.1" %}
 
 package:
   name: pyopenssl
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pyOpenSSL/pyOpenSSL-{{ version }}.tar.gz
-  sha256: 92f08eccbd73701cf744e8ffd6989aa7842d48cbe3fea8a7c031c5647f590ac5
+  sha256: 4c231c759543ba02560fcd2480c48dcec4dae34c9da7d3747c508227e0624b51
 
 build:
   noarch: python
