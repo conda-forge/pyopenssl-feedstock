@@ -10,7 +10,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vvv
 
 requirements:
@@ -22,6 +22,14 @@ requirements:
     - cryptography >=35.0
 
 test:
+  source_files:
+    - tests/*
+  commands:
+    - pytest tests
+  requires:
+    - pytest
+    - flaky
+    - pretend
   imports:
     - OpenSSL
     - OpenSSL.crypto
