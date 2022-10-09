@@ -19,7 +19,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - cryptography >=35.0
+    - cryptography >=38.0.0,<39
 
 test:
   source_files:
