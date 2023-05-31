@@ -10,7 +10,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vvv
 
 requirements:
@@ -19,7 +19,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - cryptography >=38.0.0,<41
+    - cryptography >=38.0.0,<42,!=40.0.0,!=40.0.1
 
 test:
   source_files:
