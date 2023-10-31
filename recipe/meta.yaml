@@ -15,11 +15,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
-    - cryptography >=38.0.0,<42,!=40.0.0,!=40.0.1
+    - python >=3.7
+    - cryptography >=41.0.5,<42
 
 test:
   source_files:
