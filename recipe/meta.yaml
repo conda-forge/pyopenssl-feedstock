@@ -27,7 +27,8 @@ test:
   commands:
     - pytest tests
   requires:
-    - pytest
+    - pytest >=3.0.1
+    - pytest-rerunfailures
     - flaky
     - pretend
   imports:
