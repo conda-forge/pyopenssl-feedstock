@@ -28,8 +28,8 @@ test:
     - pytest tests
   requires:
     - pytest
-    - flaky
     - pretend
+    - pytest-rerunfailures
   imports:
     - OpenSSL
     - OpenSSL.crypto
