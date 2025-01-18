@@ -21,6 +21,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - cryptography >=41.0.5,<45
+    - typing-extensions >=4.9
 
 test:
   source_files:
