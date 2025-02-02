@@ -27,8 +27,10 @@ test:
   source_files:
     - tests/*
   commands:
+    - pip check
     - pytest tests
   requires:
+    - pip
     - pytest
     - python {{ python_min }}
     - pretend
