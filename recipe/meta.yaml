@@ -1,4 +1,4 @@
-{% set version = "25.3.0" %}
+{% set version = "26.0.0" %}
 
 package:
   name: pyopenssl
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pyOpenSSL/pyopenssl-{{ version }}.tar.gz
-  sha256: c981cb0a3fd84e8602d7afc209522773b94c1c2446a3c710a75b06fe1beae329
+  sha256: f293934e52936f2e3413b89c6ce36df66a0b34ae1ea3a053b8c5020ff2f513fc
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
   run:
     - typing_extensions >=4.9
     - python >={{ python_min }}
-    - cryptography >=45.0.7,<47
+    - cryptography >=46.0.0,<47
     - typing-extensions >=4.9
 
 test:
