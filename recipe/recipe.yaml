@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "25.3.0"
+  version: "26.0.0"
 
 package:
   name: pyopenssl
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pyOpenSSL/pyopenssl-${{ version }}.tar.gz
-  sha256: c981cb0a3fd84e8602d7afc209522773b94c1c2446a3c710a75b06fe1beae329
+  sha256: f293934e52936f2e3413b89c6ce36df66a0b34ae1ea3a053b8c5020ff2f513fc
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -22,9 +22,8 @@ requirements:
     - pip
     - setuptools
   run:
-    - typing_extensions >=4.9
     - python >=${{ python_min }}
-    - cryptography >=45.0.7,<47
+    - cryptography >=46.0.0,<47
     - typing-extensions >=4.9
 
 tests:
@@ -47,7 +46,8 @@ tests:
         - pytest-rerunfailures
     script:
       - pip check
-      - pytest tests
+      # Skip test_client_receives_servers_data due to upstream bug: https://github.com/pyca/pyopenssl/issues/1455
+      - pytest tests -k "not test_client_receives_servers_data"
 
 about:
   license: Apache-2.0
@@ -67,4 +67,5 @@ about:
 extra:
   recipe-maintainers:
     - goanpeca
+    - janjagusch
     - nehaljwani
