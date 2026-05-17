@@ -24,11 +24,10 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=908&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyopenssl-feedstock?branchName=main">
-      </a>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
     </td>
   </tr>
 </table>
@@ -155,5 +154,7 @@ Feedstock Maintainers
 =====================
 
 * [@goanpeca](https://github.com/goanpeca/)
+* [@h-vetinari](https://github.com/h-vetinari/)
+* [@janjagusch](https://github.com/janjagusch/)
 * [@nehaljwani](https://github.com/nehaljwani/)
 
